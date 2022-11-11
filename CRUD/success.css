@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: powderblue;
+}
+.tickImg {
+  font-size: 40px;
+  color: green;
+}
+.container {
+  background-color: white;
+  margin-top: 150px;
+  border: 2px solid green;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40px;
+  box-shadow: 1px 3px 16px 9px rgba(0, 0, 0, 0.97);
+}
+.message {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 70px;
+}

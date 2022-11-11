@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Φόρμα Εγγραφής</title>
+</head>
+
+<body>
+    <div id="registrationForm">
+    <div class="container">
+        <form action="" class="form-signup" method="POST" id="validation_form" novalidate>
+            <h2>Νέος Λογαριασμός</h2>
+            <p>Ξεκινήστε την εγγραφή σας!</p>
+            <div class="form-group">
+                <div class="row ">
+                    <div class="col-md-6 my-2">
+                        <input type="text" name="name" class="form-control" placeholder="Όνομα">
+                         <div style="color: red; font-size: 10px;" class="nameError"> </div>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <input type="text" class="form-control" placeholder="Επώνυμο" name="surname">
+                         <div style="color: red; font-size: 10px;" class="surnameError"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group my-3">
+                <input type="tel" class="form-control" placeholder="Τηλέφωνο"  name="telephone">
+                <div style="color: red; font-size: 10px;" class="telephoneError"> </div>
+            </div>
+            <div class="form-group my-3">
+                <input type="email" name="email" class="form-control" placeholder="Email">
+                 <div style="color: red; font-size: 10px;" class="emailError"> </div>
+            </div>
+            <div class="form-group my-3">
+                <select name="category" class="form-select">
+               <option value="">Επιλέξτε Κατηγορία</option>
+               <option value="Επαγγελματίας">Επαγγελματίας</option>
+               <option value="Ιδιώτης">Ιδιώτης</option>
+                </select>
+                 <div style="color: red; font-size: 10px;" class="categoryError"> </div>
+            </div>
+            <div class="d-grid gap-2">
+            <input type="submit" class="btn btn-success btn-primary " name="submit" value="Εγγραφή">
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="formB.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
